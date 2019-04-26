@@ -80,12 +80,12 @@ authService.onAuthStateChanged(function(user) {
   if (user) {
     console.log('AuthStateChanged', user)
     document.getElementById('datosuser').innerHTML = JSON.stringify(user);
-    document.getElementById('botonlogin').style.display = 'none';
-    document.getElementById('botonlogout').style.display = 'block';
+    /*document.getElementById('botonlogin').style.display = 'none';
+    document.getElementById('botonlogout').style.display = 'block';*/
   } else {
-    document.getElementById('datosuser').innerHTML = 'Sin usuario logueado...'
+   /* document.getElementById('datosuser').innerHTML = 'Sin usuario logueado...'
     document.getElementById('botonlogin').style.display = 'block';
-    document.getElementById('botonlogout').style.display = 'none';
+    document.getElementById('botonlogout').style.display = 'none';*/
   }
 });
 </script>
